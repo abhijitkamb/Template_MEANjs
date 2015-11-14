@@ -4,10 +4,11 @@ var defaultEnvConfig = require('./default');
 
 module.exports = {
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+    uri: 'mongodb://ds051534.mongolab.com:51534/meanstarter',
     options: {
-      user: '',
-      pass: ''
+      user: 'meanadmin',
+      pass: 'meanpass'
+    
     },
     // Enable mongoose debug mode
     debug: process.env.MONGODB_DEBUG || false
